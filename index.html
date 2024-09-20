@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codevista 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap">
+</head>
+<body>
+    <!-- Top Section -->
+    <header>
+        <div class="header-content">
+            <h1>Codevista 2024</h1>
+            <p>26-28 September, IGDTUW</p>
+        </div>
+    </header>
+
+    <!-- Hackathon Description -->
+    <section id="intro">
+        <h2>Welcome to Codevista 2024!</h2>
+        <p>Join us for Codevista 2024, a premier hackathon hosted by IGDTUW, bringing together the brightest minds from across the globe to innovate and create. Over three exciting days, participants will tackle real-world challenges across multiple tracks, compete for amazing prizes, and showcase their skills in front of industry leaders and peers. Whether you're a seasoned developer or a curious beginner, Codevista offers a platform to push boundaries and turn ideas into reality. Don't miss out on this incredible opportunity to learn, network, and make a difference!</p>
+    </section>
+
+    <!-- Tracks and Prizes -->
+    <section id="tracks">
+        <h2>Tracks and Prizes</h2>
+        <div class="track">
+            <h3>AI & Machine Learning</h3>
+            <p>Unleash the power of AI and machine learning to develop groundbreaking solutions. From predictive analytics to intelligent systems, this track is all about leveraging data and algorithms to create the next big thing.</p>
+            <ul>
+                <li><strong>Winner:</strong> $2,000 + Trophy</li>
+                <li><strong>Runner-Up:</strong> $1,200 + Certificate</li>
+                <li><strong>Second Runner-Up:</strong> $800 + Certificate</li>
+            </ul>
+        </div>
+        <div class="track">
+            <h3>Cybersecurity</h3>
+            <p>Defend against cyber threats and safeguard digital assets with innovative security solutions. This track focuses on building robust systems to prevent, detect, and respond to cybersecurity incidents.</p>
+            <ul>
+                <li><strong>Winner:</strong> $2,000 + Trophy</li>
+                <li><strong>Runner-Up:</strong> $1,200 + Certificate</li>
+                <li><strong>Second Runner-Up:</strong> $800 + Certificate</li>
+            </ul>
+        </div>
+        <div class="track">
+            <h3>Blockchain & FinTech</h3>
+            <p>Transform the future of finance with blockchain technology and financial innovations. This track is dedicated to creating secure, scalable, and decentralized solutions for the finance sector.</p>
+            <ul>
+                <li><strong>Winner:</strong> $2,000 + Trophy</li>
+                <li><strong>Runner-Up:</strong> $1,200 + Certificate</li>
+                <li><strong>Second Runner-Up:</strong> $800 + Certificate</li>
+            </ul>
+        </div>
+        <div class="track">
+            <h3>Game Development</h3>
+            <p>Bring your creativity to life by designing and developing immersive video games. This track challenges participants to create engaging and innovative games using cutting-edge technology.</p>
+            <ul>
+                <li><strong>Winner:</strong> $2,000 + Trophy</li>
+                <li><strong>Runner-Up:</strong> $1,200 + Certificate</li>
+                <li><strong>Second Runner-Up:</strong> $800 + Certificate</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <!-- Sponsors -->
+<section id="sponsors">
+    <h2>Our Sponsors</h2>
+    <div class="sponsor-list">
+        <div class="sponsor">
+            <img src="polygonmatic.png" alt="PolygonMATIC Logo">
+            <span>PolygonMATIC</span>
+        </div>
+        <div class="sponsor">
+            <img src="eth.png" alt="ETH India Logo">
+            <span>ETH India</span>
+        </div>
+        <div class="sponsor">
+            <img src="solana.png" alt="SOLANA Logo">
+            <span>SOLANA</span>
+        </div>
+        <div class="sponsor">
+            <img src="xyz.png" alt="xyz Logo">
+            <span>.xyz</span>
+        </div>
+        <div class="sponsor">
+            <img src="github.png" alt="GitHub Logo">
+            <span>GitHub</span>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Register Section -->
+    <section id="register">
+        <button id="register-btn">Register with Team</button>
+    </section>
+
+    <!-- Bottom Section -->
+    <footer>
+        <div id="contact">
+            <h3>Contact Us</h3>
+            <p>Address: James Church, New Church Rd, Opp. St, Kashmere Gate, New Delhi, Delhi 110006</p>
+            <p>Phone: 011 2390 0220</p>
+        </div>
+        <div id="about-us">
+            <h3>About Us</h3>
+            <p>Codevista is a flagship hackathon organized by IGDTUW to encourage innovation and technological advancement. Our mission is to provide a platform for aspiring tech enthusiasts to showcase their skills, collaborate with like-minded individuals, and drive forward-thinking solutions in various tech domains. Join us for an unforgettable experience of learning, networking, and creating!</p>
+        </div>
+    </footer>
+
+<!-- Register Modal -->
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-options">
+            <div class="option" id="join-team">
+                <h2>Join a Team</h2>
+                <label for="team-code">Team Code:</label>
+                <input type="text" id="team-code" name="team-code" required>
+                <button id="join-btn">Join Team</button>
+            </div>
+            <div class="option" id="create-team">
+                <h2>Create a New Team</h2>
+                <form id="create-team-form">
+                    <label for="team-name">Team Name:</label>
+                    <input type="text" id="team-name" name="team-name" required>
+                    <label for="team-leader-name">Team Leader Name:</label>
+                    <input type="text" id="team-leader-name" name="team-leader-name" required>
+                    <label for="mobile">Mobile:</label>
+                    <input type="text" id="mobile" name="mobile" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="college">College:</label>
+                    <input type="text" id="college" name="college" required>
+                    <button type="button" id="add-member-btn">Add New Team Members</button>
+                    <div id="members-section" style="display: none;">
+                        <h3>Team Members</h3>
+                        <div id="team-members">
+                            <!-- Team member fields will be appended here -->
+                        </div>
+                        <button type="button" id="add-member">Add Member</button>
+                    </div>
+                    <button type="submit">Create Team</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

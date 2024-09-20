@@ -1,0 +1,314 @@
+/* styles.css */
+body {
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0033a0; /* Cobalt Blue */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#intro {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 2.5rem;
+    color: #0033a0;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+#tracks, #sponsors, #register, footer {
+    padding: 40px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0033a0;
+    border-bottom: 2px solid #0033a0;
+    padding-bottom: 10px;
+}
+
+.track {
+    margin-bottom: 30px;
+}
+
+.track h3 {
+    font-size: 1.5rem;
+    color: #0033a0;
+}
+
+.track p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.track ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.track li {
+    margin: 10px 0;
+}
+#sponsors {
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+.sponsor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between sponsors */
+    justify-content: center; /* Center the sponsors */
+}
+
+.sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 calc(50% - 20px); /* Two sponsors per row, minus the gap */
+    max-width: 200px; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.sponsor img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.sponsor span {
+    font-size: 1rem;
+    white-space: nowrap; /* Ensure text doesn't wrap */
+}
+
+
+#register {
+    text-align: center;
+}
+
+#register-btn {
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#register-btn:hover {
+    background-color: #002680;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0033a0;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+#contact p, #about-us p {
+    margin: 5px 0;
+}
+
+#about-us {
+    max-width: 400px;
+}
+
+#register-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Options */
+.modal-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    width: 48%;
+}
+
+#join-team, #create-team {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff; /* Replace with your primary button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Replace with your hover color */
+}
+
+/* Container for the team form */
+#team-form {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    margin: 0 auto;
+}
+
+/* Form input styling */
+#team-form input {
+    margin-bottom: 10px; /* Adjust spacing between input fields */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Google Sans', sans-serif; /* Apply Google Sans font */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Form label styling */
+#team-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Adjust the form button to fit within the container */
+#team-form button {
+    padding: 10px;
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    max-width: 100%; /* Ensure button does not exceed container width */
+}
+
+/* Ensure button maintains responsiveness */
+#team-form button:hover {
+    background-color: #002680;
+}
+
+/* Ensure the team members section aligns properly */
+#members-section {
+    margin-top: 10px;
+}
+
+#team-members {
+    margin-bottom: 10px;
+}
+
+
+/* Apply Google Sans font to all form elements */
+#team-form, #team-form input, #team-form label, #team-form button {
+    font-family: 'Google Sans', sans-serif;
+}
+
+/* Ensure the button styling matches the website's design */
+#team-form button {
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#team-form button:hover {
+    background-color: #002680;
+}
+
+@media (max-width: 600px) {
+    #team-form input {
+        width: 100%; /* Make inputs take full width on smaller screens */
+    }
+    
+    #team-form button {
+        width: 100%; /* Make buttons take full width on smaller screens */
+    }
+}
+
